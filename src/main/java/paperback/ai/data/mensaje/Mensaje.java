@@ -9,6 +9,7 @@ import java.util.UUID;
 @Data
 @AllArgsConstructor
 public class Mensaje {
+    //
     private UUID uuid = UUID.randomUUID();
     private String tipo;
     private String texto;

@@ -12,6 +12,7 @@ import java.util.List;
 @NoArgsConstructor
 @AllArgsConstructor
 public class Dialogo {
+    //
     private List<Mensaje> instrucciones = new ArrayList<>();
     private List<Mensaje> mensajes = new ArrayList<>();
 }
