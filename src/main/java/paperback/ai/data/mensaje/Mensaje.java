@@ -1,4 +1,19 @@
-package PACKAGE_NAME;
+package paperback.ai.data.mensaje;
 
-public class MensajeAI {
+import lombok.Data;
+
+import java.time.Instant;
+import java.util.UUID;
+
+@Data
+public class Mensaje {
+    private UUID uuid = UUID.randomUUID();
+    private String tipo;
+    private String texto;
+    private Instant timeStamp = Instant.now();
+
+    public Mensaje(String tipo, String texto) {
+        this.tipo = tipo;
+        this.texto = texto;
+    }
 }
